@@ -11,32 +11,40 @@
       <div class="col-md-6 mt-md-0 mt-3">
 
         <!-- Content -->
-        <h5 class="text-uppercase">Footer Content</h5>
-        <p>Here you can use rows and columns to organize your footer content.</p>
-
+        <div class="entreprise">
+          <div class="adresse">
+            <img src="../images/icons/localisation.svg"></img>
+            <p>15 rue Henri Durre<br> 59220 Denain</p>
+          </div>
+          <div class="tel">
+            <img src="../images/icons/telephone.svg"></img>
+            <p>0327554466</p>
+          </div>
+          <div class="contact">
+            <img src="../images/icons/mail.svg"></img>
+            <p>contact@medicap.com</p>
+          </div>
+        </div>
       </div>
-      <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none pb-3">
 
       <!-- Grid column -->
       <div class="col-md-3 mb-md-0 mb-3">
 
         <!-- Links -->
-        <h5 class="text-uppercase">Links</h5>
+        <h5 class="text-uppercase">L'entreprise</h5>
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">Link 1</a>
+            <a href="#!">Livraison</a>
           </li>
           <li>
-            <a href="#!">Link 2</a>
+            <a href="#!">CGV</a>
           </li>
           <li>
-            <a href="#!">Link 3</a>
+            <a href="#!">Mention légal</a>
           </li>
           <li>
-            <a href="#!">Link 4</a>
+            <a href="#!">Protection des donées</a>
           </li>
         </ul>
 
@@ -47,23 +55,11 @@
       <div class="col-md-3 mb-md-0 mb-3">
 
         <!-- Links -->
-        <h5 class="text-uppercase">Links</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!">Link 1</a>
-          </li>
-          <li>
-            <a href="#!">Link 2</a>
-          </li>
-          <li>
-            <a href="#!">Link 3</a>
-          </li>
-          <li>
-            <a href="#!">Link 4</a>
-          </li>
-        </ul>
-
+        <h5 class="text-uppercase">Réseaux sociaux</h5>
+          <div class="reseaux">
+            <img src="../images/icons/facebook.svg"></img>
+            <img src="../images/icons/linkedin.svg"></img>
+          </div>
       </div>
       <!-- Grid column -->
 
