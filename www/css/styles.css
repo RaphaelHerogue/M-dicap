@@ -4,7 +4,9 @@ body{position:relative}
   bottom:0;
 }
 
-
+#logo > img{
+  width: 100%;
+}
 
 .overlay {
   top:0;

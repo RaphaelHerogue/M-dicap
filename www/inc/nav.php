@@ -21,12 +21,20 @@
             <ul class="nav navbar-nav nav-flex-icons ml-auto">
 
 
-                <li class="nav-item">
+                <li class="nav-item d-flex">
+                  <img src="../images/icons/icone-maison.svg" alt="">
                     <a class="nav-link" href="#">L'Entreprise</a>
+                    <img src="../images/icons/icone-fleche.svg" alt="">
+
+                    <hr>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item d-flex">
+                  <img src="../images/icons/icone-info.svg" alt="">
                     <a class="nav-link" href="#">Information</a>
+                    <img src="../images/icons/icone-fleche.svg" alt="">
+
                 </li>
+                <hr>
 
 
                 <li class="nav-item dropdown">
