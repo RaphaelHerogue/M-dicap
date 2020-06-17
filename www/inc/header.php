@@ -1,4 +1,6 @@
 <header>
+  <nav class="navbar navbar-expand-md navbar-light bg-light sidebarNavigation" data-sidebarClass="navbar-light bg-light">
+
   <div class="container-fluid">
     <div class="row align-items-center">
 
@@ -10,10 +12,10 @@
         </button>
       </div>
       <div class="col-9" id="logo">
-        <img src="../images/logo.svg" alt="logo medicap">
+        <a class="navbar-brand" href="index.php"><img src="../images/logo.svg" alt="logo medicap"></a>
       </div>
     </div>
-  </div>
+  <!-- </div> -->
 
 
 
