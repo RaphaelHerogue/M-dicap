@@ -46,7 +46,8 @@ body{position:relative}
 
 .sideMenu {
   left: -100%;
-top: 44px;
+top: 0;
+padding: 0 !important;
 transition: all ease 0.5s;
 overflow: hidden;
 width: 100%;
