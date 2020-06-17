@@ -1,5 +1,5 @@
 
-<footer class="page-footer font-small blue fixed-bottom">
+<footer class="page-footer font-small blue">
 
   <!-- Footer Links -->
   <div class="container-fluid text-center text-md-left">
@@ -41,7 +41,7 @@
             <a href="#!">CGV</a>
           </li>
           <li>
-            <a href="#!">Mention légal</a>
+            <a href="#!">Mentions légales</a>
           </li>
           <li>
             <a href="#!">Protection des donées</a>
