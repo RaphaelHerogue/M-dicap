@@ -14,7 +14,9 @@ body{position:relative}
   bottom:0;
 }
 
-
+#logo > a > img{
+  width: 100%;
+}
 
 .overlay {
   top:0;
