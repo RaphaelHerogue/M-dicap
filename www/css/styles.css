@@ -13,7 +13,9 @@ body{position:relative}
   bottom:0;
 }
 
-
+#logo > a > img{
+  width: 100%;
+}
 
 .overlay {
   top:0;
@@ -24,6 +26,10 @@ body{position:relative}
   z-index:998;
   transition:all ease 0.2s;
 }
+.icones{
+  height: 32px;
+}
+
 
 .overlay.open {
   left:0;
@@ -42,16 +48,17 @@ body{position:relative}
 
 .sideMenu {
   left: -100%;
-top: 44px;
-transition: all ease 0.5s;
-overflow: hidden;
-width: 100%;
-z-index: 999;
-max-width: 88%;
-margin-bottom: 0;
-padding: 1rem;
-border-top-right-radius: 80px 80px;
-border-bottom-right-radius: 80px 80px;
+  top: 0;
+  padding: 0 !important;
+  transition: all ease 0.5s;
+  overflow: hidden;
+  width: 100%;
+  z-index: 999;
+  max-width: 88%;
+  margin-bottom: 0;
+  padding: 1rem;
+  border-top-right-radius: 80px 80px;
+  border-bottom-right-radius: 80px 80px;
 
 }
 

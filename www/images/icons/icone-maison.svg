@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+  <g id="icone-maison" transform="translate(1 1)">
+    <path id="maison" d="M12,5l7.3,8H24L12,0,0,13H4V24H20V17" fill="none" stroke="#134dbf" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <g id="Path" transform="translate(9 12)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+      <path d="M6,3C6,5.7,3,8,3,8S0,5.7,0,3A2.946,2.946,0,0,1,3,0,2.946,2.946,0,0,1,6,3Z" stroke="none"/>
+      <path d="M 3 2 C 2.401870012283325 2 2 2.401869773864746 2 3 C 2 3.737289905548096 2.472601413726807 4.536653518676758 3 5.188924789428711 C 3.527398586273193 4.536653518676758 4 3.737289905548096 4 3 C 4 2.401869773864746 3.598129987716675 2 3 2 M 3 0 C 4.699999809265137 0 6 1.300000190734863 6 3 C 6 5.699999809265137 3 8 3 8 C 3 8 0 5.699999809265137 0 3 C 0 1.300000190734863 1.300000190734863 0 3 0 Z" stroke="none" fill="#134dbf"/>
+    </g>
+  </g>
+</svg>
