@@ -1,3 +1,12 @@
+footer
+{
+  box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.15) !important;
+  color: #898A8F;
+}
+
+.icons{
+  height: 50px;
+  margin: 10px !important;
 body{position:relative}
 .overlay,.sideMenu {
   position:fixed;
