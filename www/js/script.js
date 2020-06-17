@@ -12,7 +12,7 @@ window.onload=function()
            $(".sideMenu").removeClass("open")
           })
         });
-        $("body").on("click",".sideMenu.open .nav-item",function()
+        $("body").on("click","#navbarsExampleDefault > div.container-fluid > div.row.d-flex.justify-content-between.py-2 > img:nth-child(2)",function()
         {if(!$(this).hasClass("dropdown"))
           {$(".sideMenu, .overlay").toggleClass("open")
           }

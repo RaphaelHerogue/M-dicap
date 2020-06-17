@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="64" height="64" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="icone-avatar" clip-path="url(#clip-path)">
+    <rect id="Box" width="24" height="24" fill="none"/>
+    <path id="shape" d="M80-38A30.011,30.011,0,0,0,50-8,30.011,30.011,0,0,0,80,22,30.011,30.011,0,0,0,110-8,30.011,30.011,0,0,0,80-38Zm0,9a8.988,8.988,0,0,1,9,9,8.988,8.988,0,0,1-9,9,8.988,8.988,0,0,1-9-9A8.988,8.988,0,0,1,80-29Zm0,42.6A21.6,21.6,0,0,1,62,3.94C62.09-2.03,74-5.3,80-5.3c5.97,0,17.91,3.27,18,9.24A21.6,21.6,0,0,1,80,13.6Z" transform="translate(-48 40)" fill="#134dbf"/>
+  </g>
+</svg>
