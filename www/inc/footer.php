@@ -1,5 +1,5 @@
 
-<footer class="page-footer font-small blue pt-4">
+<footer class="page-footer font-small blue fixed-bottom">
 
   <!-- Footer Links -->
   <div class="container-fluid text-center text-md-left">
@@ -8,32 +8,32 @@
     <div class="row">
 
       <!-- Grid column -->
-      <div class="col-md-6 mt-md-0 mt-3">
+      <div class="col-12 col-lg-4 col-md-12">
 
         <!-- Content -->
-        <div class="entreprise">
-          <div class="adresse">
-            <img src="../images/icons/localisation.svg"></img>
+        <div class="entreprise justify-content-center d-md-flex flex-md-row flex-lg-column">
+          <div class="d-flex align-items-center col-md-4 col-lg-12 justify-content-center justify-content-lg-start">
+            <img class="icons pr-1 ml-4 pr-lg-0 ml-lg-0" src="../images/icons/localisation.svg"></img>
             <p>15 rue Henri Durre<br> 59220 Denain</p>
           </div>
-          <div class="tel">
-            <img src="../images/icons/telephone.svg"></img>
+          <div class="d-flex align-items-center col-md-4 col-lg-12 justify-content-center  justify-content-lg-start">
+            <img class="icons pr-4 ml-0 pr-lg-0 ml-lg-0" src="../images/icons/telephone.svg"></img>
             <p>0327554466</p>
           </div>
-          <div class="contact">
-            <img src="../images/icons/mail.svg"></img>
-            <p>contact@medicap.com</p>
+          <div class="d-flex align-items-center col-md-4 col-lg-12 justify-content-center  justify-content-lg-start">
+            <img class="icons pl-5 mr-1 pl-md-0 mr-md-3 pl-lg-0 ml-lg-0 mr-lg-2" src="../images/icons/mail.svg"></img>
+            <p class="pl-2 pl-lg-0">contact@medicap.com</p>
           </div>
         </div>
       </div>
 
       <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3">
+      <div class="col-12 col-lg-4 col-md-6">
 
         <!-- Links -->
-        <h5 class="text-uppercase">L'entreprise</h5>
+        <h5 class="text-uppercase text-center">L'entreprise</h5>
 
-        <ul class="list-unstyled">
+        <ul class="list-unstyled d-flex flex-column align-items-center">
           <li>
             <a href="#!">Livraison</a>
           </li>
@@ -52,13 +52,13 @@
       <!-- Grid column -->
 
       <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3">
+      <div class="col-12 col-lg-4 col-md-6 mb-md-0 mb-3">
 
         <!-- Links -->
-        <h5 class="text-uppercase">Réseaux sociaux</h5>
-          <div class="reseaux">
-            <img src="../images/icons/facebook.svg"></img>
-            <img src="../images/icons/linkedin.svg"></img>
+        <h5 class="text-uppercase text-center">Réseaux sociaux</h5>
+          <div class="row justify-content-around">
+            <img class="icons" src="../images/icons/facebook.svg"></img>
+            <img class="icons" src="../images/icons/linkedin.svg"></img>
           </div>
       </div>
       <!-- Grid column -->
