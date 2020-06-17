@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="50" height="50" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="icone-menu-light" clip-path="url(#clip-path)">
+    <rect id="bg" width="50" height="50" fill="none"/>
+    <path id="icon" d="M19.4,39.5a1,1,0,0,1-1-1V36.111a1,1,0,0,1,1-1H45a1,1,0,0,1,1,1V38.5a1,1,0,0,1-1,1ZM1,21.945a1,1,0,0,1-1-1V18.555a1,1,0,0,1,1-1H45a1,1,0,0,1,1,1v2.389a1,1,0,0,1-1,1ZM1,4.389a1,1,0,0,1-1-1V1A1,1,0,0,1,1,0H26.6a1,1,0,0,1,1,1V3.388a1,1,0,0,1-1,1Z" transform="translate(2 5)" fill="#134dbf"/>
+  </g>
+</svg>
