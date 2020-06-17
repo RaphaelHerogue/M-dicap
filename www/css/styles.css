@@ -1,0 +1,16 @@
+*{
+  border:1px solid black;
+}
+
+#menu{
+margin-bottom: 9px;
+padding: 6px;
+width: 100%;
+}
+#logo{
+  padding-left: inherit;
+  width: 80%;
+}
+#menu>img{
+  width: 100%;
+}
