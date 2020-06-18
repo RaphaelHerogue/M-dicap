@@ -47,7 +47,7 @@ body{position:relative}
 }
 
 .sideMenu {
-  left: -100%;
+left: -100%;
 top: 0;
 padding: 0 !important;
 transition: all ease 0.5s;
@@ -71,3 +71,12 @@ border-bottom-right-radius: 80px 80px;
   margin:0;
   padding:0 15px;
 }
+
+
+#navDroite {
+  box-sizing: content-box !important;
+}
+
+
+
+/* Responsive */

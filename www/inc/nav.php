@@ -1,53 +1,44 @@
-  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-    <div class="container-fluid shadow-sm p-3 mb-5">
+  <div class="collapse navbar-collapse d-md-flex flex-wrap" id="navbarsExampleDefault">
+    <div class="container-fluid shadow-sm p-3 mb-5 d-md-none d-lg-none">
       <div class="row d-flex justify-content-between p-4">
         <img src="../images/icons/icone-avatar.svg" alt="">
         <img src="../images/icons/icone-menu-light.svg" alt="">
       </div>
-      <div class="row py-2">
+      <div class="row py-2 order-md-1">
         <img src="../images/logo.svg" alt="">
       </div>
     </div>
-
-
-    <ul class="nav navbar-nav nav-flex-icons ml-auto">
+    <ul class="nav navbar-nav nav-flex-icons m-auto col-lg-8 col-md-12 align-items-center d-flex justify-content-around order-md-3 order-lg-2 order-xl-2 flex-md-wrap">
 
       <!-- Image + Section Entreprise -->
-      <li class="nav-item border-bottom my-3">
-        <div class="row">
-          <img class="icones col-2" src="../images/icons/icone-maison.svg" alt="">
-          <a class="nav-link col-8" href="#">L'Entreprise</a>
-          <img class="icones col-2" src="../images/icons/icone-fleche.svg" alt="">
-        </div>
+      <li class="nav-item border-bottom my-3 d-flex flex-lg-column">
+          <img class="icones col" src="../images/icons/icone-maison.svg" alt="">
+          <a class="nav-link col" href="#">L'Entreprise</a>
+          <img class="icones col d-lg-none d-md-none" src="../images/icons/icone-fleche.svg" alt="">
       </li>
 
       <!-- Image + Section Information -->
 
 
-      <li class="nav-item border-bottom my-3">
-        <div class="row">
-          <img class="icones col-2" src="../images/icons/icone-info.svg" alt="">
-          <a class="nav-link col-8" href="#">Information</a>
-          <img class="icones col-2" src="../images/icons/icone-fleche.svg" alt="">
-        </div>
+      <li class="nav-item border-bottom my-3 d-flex flex-lg-column">
+          <img class="icones col" src="../images/icons/icone-info.svg" alt="">
+          <a class="nav-link col" href="#">Information</a>
+          <img class="icones col d-lg-none d-md-none" src="../images/icons/icone-fleche.svg" alt="">
       </li>
-      <hr>
 
-
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
-        aria-expanded="false">Dropdown</a>
-        <div class="dropdown-menu" aria-labelledby="dropdown01">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
+      <li class="nav-item border-bottom my-3 d-flex flex-lg-column">
+          <img class="icones col" src="../images/icons/icone-info.svg" alt="">
+          <a class="nav-link col" href="contact.php">Contact</a>
+          <img class=" col d-lg-none d-md-none" src="../images/icons/icone-fleche.svg" alt="">
       </li>
+
     </ul>
-    <div class="row justify-content-around">
-      <button type="button" class="btn btn-primary">Connexion</button>
-      <button type="button" class="btn btn-primary">Inscription</button>
-
+    <div class="row d-flex align-items-center justify-content-around col-lg-4 col-md-12 order-md-2 my-2" id="navDroite">
+      <img class="icones" src="../images/icons/icone-avatar.svg" alt="">
+      <img class="icones" src="../images/icons/icone-shop.svg" alt="">
+      <div class="text-center">        
+        <button type="button" class="mt-2 btn btn-lg btn-primary">Connexion/Inscription</button>
+      </div>
     </div>
 
   </div>
