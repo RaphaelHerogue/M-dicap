@@ -35,8 +35,8 @@
     </ul>
     <div class="row d-flex align-items-center justify-content-around col-lg-4 col-md-12 order-md-2 my-2" id="navDroite">
       <img class="icones" src="../images/icons/icone-avatar.svg" alt="">
-      <img class="icones" src="../images/icons/icone-shop.svg" alt="">
-      <div class="text-center">        
+      <img class="icones"src="../images/icons/icone-shop.svg" alt="">
+      <div class="text-center">
         <button type="button" class="mt-2 btn btn-lg btn-primary">Connexion/Inscription</button>
       </div>
     </div>
