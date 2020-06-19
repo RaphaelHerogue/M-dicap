@@ -1,7 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="86.94" height="24.074" viewBox="0 0 86.94 24.074">
-  <g id="icone-menu" transform="translate(7.675 2)">
-    <line id="Ligne_74" data-name="Ligne 74" x2="15.892" transform="translate(0.271 0)" fill="none" stroke="#02ad4e" stroke-width="4"/>
-    <line id="Ligne_77" data-name="Ligne 77" x2="15.892" transform="translate(0.271 20.074)" fill="none" stroke="#02ad4e" stroke-width="4"/>
-    <path id="Tracé_992" data-name="Tracé 992" d="M86.94,0H0" transform="translate(-7.675 9.68)" fill="none" stroke="#02ad4e" stroke-width="2.945"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="85.844" height="23.014" viewBox="0 0 85.844 23.014">
+  <g id="icone-menu" transform="translate(-35 -32.52)">
+    <path id="Tracé_2158" data-name="Tracé 2158" d="M0,0H15.892" transform="translate(42.946 33.99)" fill="none" stroke="#008d36" stroke-width="2.94"/>
+    <path id="Tracé_2157" data-name="Tracé 2157" d="M0,0H15.892" transform="translate(42.946 54.064)" fill="none" stroke="#008d36" stroke-width="2.94"/>
+    <path id="Tracé_992" data-name="Tracé 992" d="M23.838,0H0" transform="translate(35 43.67)" fill="none" stroke="#008d36" stroke-width="2.945"/>
+    <path id="barre" d="M0,0H62.344" transform="translate(58.5 43.67)" fill="none" stroke="#008d36" stroke-width="2.94"/>
   </g>
 </svg>
