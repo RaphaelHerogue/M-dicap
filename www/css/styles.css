@@ -71,3 +71,22 @@ border-bottom-right-radius: 80px 80px;
   margin:0;
   padding:0 15px;
 }
+
+.modal
+{
+  background: rgba(255,255,255,0.8) !important;
+  backdrop-filter: blur(0.4rem) !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-dialog
+{
+  margin: 23rem auto !important;
+}
+
+.modal-body
+{
+  text-align: center;
+}

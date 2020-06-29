@@ -6,6 +6,9 @@
     <link rel="icon" href="images/icons/favIcon.svg" />
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+  	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
     <script type="text/javascript" src="js/scriptNav.js"></script>
 
     <title>Médicap</title>
@@ -21,9 +24,9 @@
           <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
             Launch demo modal
           </button>
-
-          <?php include "modal.php";?>
+        </div>
       </div>
+      <?php include "modal.php";?>
     </main>
 
     <?php
