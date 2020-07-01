@@ -37,7 +37,7 @@
     <img class="icones" src="../images/icons/icone-avatar.svg" alt="">
     <img class="icones"src="../images/icons/icone-shop.svg" alt="">
     <div class="text-center">
-      <button type="button" class="mt-2 btn btn-lg btn-primary">Connexion/Inscription</button>
+      <button type="button" class="mt-2 btn btn-lg btn-primary"><a href="login.php">Connexion/Inscription</a></button>
     </div>
   </div>
 
