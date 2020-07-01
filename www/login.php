@@ -17,9 +17,7 @@
   <body>
     <?php
       include "inc/header.php";
-    ?>
-    <?php
-      require_once("inc/connexion_bdd.php");
+      include "controle.php";
     ?>
 
     <div class="limiter d-flex justify-content-center">
