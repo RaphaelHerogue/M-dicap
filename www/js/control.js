@@ -1,62 +1,39 @@
-$().ready(function(){
-
-  var result = true;
-
-
-
-
-
-
+$(document).ready(function(){
   $("#formulForm").validate({
-
-
     rules: {
-      firstname: "required",
-      lastname: "required",
-
-      nom: {
+      lastname: {
+        required: true,
+        minlength: 2
+      },
+      firstname: {
         required: true,
       },
-
-      prenom: {
-        required: true,
-      },
-
       email: {
         required: true,
         email: true,
       },
-
       tel: {
         required: true,
         minlength: 10,
       },
-
-    }),
-
-
-    messages: {
-      firstname: "Entrer votre nom",
-      lastname: "Entrer votre prenom",
+      agree:"required"
     },
-
-      nom: {
+    messages: {
+      lastname: {
         required: "Entrer votre Nom de famille",
+        minlength: "Veuillez entrer minimum 2 lettres"
       },
-
-      prenom: {
+      firstname: {
         required: "Entrer votre Prenom",
       },
-
       email: {
-          required: "Entrer votre email"
+          required: "Entrer votre email",
+          email:"Veuillez respecter le format"
       },
-
-      tel: {
+      phone: {
         required:"Entrer votre Numero de tel",
       },
-
-
+      agree: "Vous devez accepter que vos informations nous soit transmises"
+    },
   });
-
-  };
+});
