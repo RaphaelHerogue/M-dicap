@@ -4,6 +4,14 @@ footer
   color: #898A8F;
 }
 
+nav{
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.16) !important;
+}
+
+nav a{
+  color: white;
+}
+
 .icons{
   height: 50px;
   margin: 10px !important;
@@ -76,7 +84,7 @@ border-bottom-right-radius: 80px 80px;
   padding: 0.25rem 0 0.7rem 1.2rem;
 }
 
-main img{
+main .actu img{
   width: 100%;
 }
 .shadowBloc{

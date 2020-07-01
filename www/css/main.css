@@ -1,90 +1,11 @@
-/*//////////////////////////////////////////////////////////////////
-[ FONT ]*/
-
-@font-face {
-  font-family: Poppins-Regular;
-  src: url('../fonts/poppins/Poppins-Regular.ttf');
-}
-
-@font-face {
-  font-family: Poppins-Bold;
-  src: url('../fonts/poppins/Poppins-Bold.ttf');
-}
-
-@font-face {
-  font-family: Poppins-Medium;
-  src: url('../fonts/poppins/Poppins-Medium.ttf');
-}
-
-@font-face {
-  font-family: Montserrat-Bold;
-  src: url('../fonts/montserrat/Montserrat-Bold.ttf');
-}
-
-/*//////////////////////////////////////////////////////////////////
-[ RESTYLE TAG ]*/
-
-* {
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
-}
-
-body, html {
-	height: 100%;
-	font-family: Poppins-Regular, sans-serif;
-}
-
-/*---------------------------------------------*/
-a {
-	font-family: Poppins-Regular;
-	font-size: 14px;
-	line-height: 1.7;
-	color: #666666;
-	margin: 0px;
-	transition: all 0.4s;
-	-webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-}
-
-a:focus {
-	outline: none !important;
-}
-
 a:hover {
 	text-decoration: none;
   color: #57b846;
 }
 
-/*---------------------------------------------*/
-h1,h2,h3,h4,h5,h6 {
-	margin: 0px;
-}
-
-p {
-	font-family: Poppins-Regular;
-	font-size: 14px;
-	line-height: 1.7;
-	color: #666666;
-	margin: 0px;
-}
-
-ul, li {
-	margin: 0px;
-	list-style-type: none;
-}
-
-
-/*---------------------------------------------*/
-input {
+input, textarea {
 	outline: none;
 	border: none;
-}
-
-textarea {
-  outline: none;
-  border: none;
 }
 
 textarea:focus, input:focus {
@@ -110,42 +31,6 @@ textarea::-webkit-input-placeholder { color: #999999; }
 textarea:-moz-placeholder { color: #999999; }
 textarea::-moz-placeholder { color: #999999; }
 textarea:-ms-input-placeholder { color: #999999; }
-
-/*---------------------------------------------*/
-button {
-	outline: none !important;
-	border: none;
-	background: transparent;
-}
-
-button:hover {
-	cursor: pointer;
-}
-
-iframe {
-	border: none !important;
-}
-
-
-/*//////////////////////////////////////////////////////////////////
-[ Utility ]*/
-.txt1 {
-  font-family: Poppins-Regular;
-  font-size: 13px;
-  line-height: 1.5;
-  color: #999999;
-}
-
-.txt2 {
-  font-family: Poppins-Regular;
-  font-size: 13px;
-  line-height: 1.5;
-  color: #666666;
-}
-
-
-/*//////////////////////////////////////////////////////////////////
-[ login ]*/
 
 .limiter {
   width: 100%;
@@ -201,7 +86,6 @@ iframe {
 }
 
 .login100-form-title {
-  font-family: Poppins-Bold;
   font-size: 24px;
   color: #333333;
   line-height: 1.2;
@@ -222,7 +106,6 @@ iframe {
 }
 
 .input100 {
-  font-family: Poppins-Medium;
   font-size: 15px;
   line-height: 1.5;
   color: #666666;
@@ -315,7 +198,6 @@ iframe {
 }
 
 .login100-form-btn {
-  font-family: Montserrat-Bold;
   font-size: 15px;
   line-height: 1.5;
   color: #fff;
@@ -344,51 +226,6 @@ iframe {
   background: #333333;
 }
 
-
-
-/*------------------------------------------------------------------
-[ Responsive ]*/
-
-
-
-@media (max-width: 992px) {
-  .wrap-login100 {
-    padding: 177px 90px 33px 85px;
-  }
-
-  .login100-pic {
-    width: 35%;
-  }
-
-  .login100-form {
-    width: 50%;
-  }
-}
-
-@media (max-width: 768px) {
-  .wrap-login100 {
-    padding: 100px 80px 33px 80px;
-  }
-
-  .login100-pic {
-    display: none;
-  }
-
-  .login100-form {
-    width: 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  .wrap-login100 {
-    padding: 100px 15px 33px 15px;
-  }
-}
-
-
-/*------------------------------------------------------------------
-[ Alert validate ]*/
-
 .validate-input {
   position: relative;
 }
@@ -410,7 +247,6 @@ iframe {
   right: 8px;
   pointer-events: none;
 
-  font-family: Poppins-Medium;
   color: #c80000;
   font-size: 13px;
   line-height: 1.4;
@@ -444,11 +280,4 @@ iframe {
 .alert-validate:hover:before {
   visibility: visible;
   opacity: 1;
-}
-
-@media (max-width: 992px) {
-  .alert-validate::before {
-    visibility: visible;
-    opacity: 1;
-  }
 }

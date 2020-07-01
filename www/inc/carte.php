@@ -28,7 +28,7 @@
   </div>
 </div>
 
-<div class="container my-5 py-5 shadowBloc rounded">
+<div class="container my-5 py-5 shadowBloc rounded actu">
   <h2 class="card-title text-primary text-center">Votre Médicap à porté de main</h5>
   <div class="card flex-row d-flex align-items-center pt-4">
     <div class="col-6 col-md-8">
@@ -40,7 +40,7 @@
   </div>
 </div>
 
-<div class="container my-5 py-5 shadowBloc rounded">
+<div class="container my-5 py-5 shadowBloc rounded actu">
   <h2 class="card-title text-primary text-center">Nos Services</h5>
   <div class="card flex-row d-flex align-items-center pt-4">
     <div class="col-6 col-md-4">
