@@ -71,3 +71,29 @@ border-bottom-right-radius: 80px 80px;
   margin:0;
   padding:0 15px;
 }
+
+.navbar-toggler{
+  padding: 0.25rem 0 0.7rem 1.2rem;
+}
+
+main img{
+  width: 100%;
+}
+.shadowBloc{
+  box-shadow: 0 13px 10px rgba(50,157,156,0.1)!important;
+}
+
+.owl-nav{
+  display: none;
+}
+.owl-dots{
+  margin-top: 50px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+  background: #134dbf !important;
+}
+
+.icones-activity{
+  width: 96px !important;
+}
