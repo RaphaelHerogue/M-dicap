@@ -1,4 +1,10 @@
-$().ready(function() {
+$().ready(function(){
+
+  var result = true;
+
+
+
+
 
 
   $("#formulForm").validate({
@@ -10,12 +16,10 @@ $().ready(function() {
 
       nom: {
         required: true,
-        minlength: 3,
       },
 
       prenom: {
         required: true,
-        minlength: 3,
       },
 
       email: {
@@ -28,12 +32,13 @@ $().ready(function() {
         minlength: 10,
       },
 
-    },
+    }),
 
 
     messages: {
       firstname: "Entrer votre nom",
       lastname: "Entrer votre prenom",
+    },
 
       nom: {
         required: "Entrer votre Nom de famille",
@@ -52,4 +57,6 @@ $().ready(function() {
       },
 
 
-  })
+  });
+
+  };
