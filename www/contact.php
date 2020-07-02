@@ -15,7 +15,7 @@
   include "inc/header.php";
   ?>
   <main>
-    <div class="container">
+    <!-- <div class="container">
       <div class="Back">
         <i class="fa fa-arrow-left" onclick="Back()"></i>
       </div>
@@ -65,7 +65,7 @@
           <input class="btn btn-primary btn-block" type="submit" value="Submit"/>
         </div>
       </form>
-    </div>
+    </div> -->
 
 
 
