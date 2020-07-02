@@ -1,36 +1,40 @@
+<div class="container-fluid p-0">
+<img class="acceuil" src="../images/equipe-medical" alt="equipe medical">
+
+</div>
 <div class="container my-5 py-5 shadowBloc rounded">
-  <h2 class="card-title text-primary text-center">Nos Activités</h5>
+  <h2 class="card-title text-primary text-center mb-5">Nos Activités</h5>
   <div id="activity" class="owl-carousel owl-theme">
     <div class="item">
       <img src="../images/icons/icone-lit.svg" alt="logo lit" class="mx-auto icones-activity rounded pt-4">
-      <p class="text-center text-secondary pt-4 ">Lits médicalisés</p>
+      <p class="text-center text-secondary pt-4 ">Lit</p>
     </div>
     <div class="item">
       <img src="../images/icons/icone-chaussure.svg" alt="logo chaussures" class="mx-auto icones-activity rounded pt-4">
-      <p class="text-center text-secondary pt-4">Chaussures médicalisées</p>
+      <p class="text-center text-secondary pt-4">Chaussures</p>
     </div>
     <div class="item">
       <img src="../images/icons/icone-handicap.svg" alt="logo handicap" class="mx-auto icones-activity rounded pt-4">
-      <p class="text-center text-secondary pt-4">Aides à la mobilité</p>
+      <p class="text-center text-secondary pt-4">Handicap</p>
     </div>
     <div class="item">
       <img src="../images/icons/icone-escalier.svg" alt="logo escalier" class="mx-auto icones-activity rounded pt-4">
-      <p class="text-center text-secondary pt-4">Lit médicalisé</p>
+      <p class="text-center text-secondary pt-4">Escalier</p>
     </div>
     <div class="item mx-auto">
       <img src="../images/icons/icone-incontinence.svg" alt="logo incontinence" class="mx-auto icones-activity rounded pt-4">
-      <p class="text-center text-secondary pt-4">Lit médicalisé</p>
+      <p class="text-center text-secondary pt-4">incontinence</p>
     </div>
     <div class="item justify-content-center">
       <img src="../images/icons/icone-aide.svg" alt="logo aides" class="mx-auto icones-activity rounded pt-4">
-      <p class="text-center text-secondary pt-4">Lit médicalisé</p>
+      <p class="text-center text-secondary pt-4">Aides</p>
     </div>
   </div>
 </div>
 
 <div class="container my-5 py-5 shadowBloc rounded actu">
-  <h2 class="card-title text-primary text-center">Votre Médicap à porté de main</h5>
-  <div class="card flex-row d-flex align-items-center pt-4">
+  <h2 class="card-title text-primary text-center mb-5">Votre Médicap à porté de main</h5>
+  <div class="card flex-row d-flex align-items-center">
     <div class="col-6 col-md-8">
       <p class="card-text text-primary"> Un espace personnalisé et sécurisé pour y enregistrer toute vos données medical. Centralisé tout sur sur votre Médicap.</p>
     </div>
@@ -41,8 +45,8 @@
 </div>
 
 <div class="container my-5 py-5 shadowBloc rounded actu">
-  <h2 class="card-title text-primary text-center">Nos Services</h5>
-  <div class="card flex-row d-flex align-items-center pt-4">
+  <h2 class="card-title text-primary text-center mb-5">Nos Services</h5>
+  <div class="card flex-row d-flex align-items-center">
     <div class="col-6 col-md-4">
       <img src="../images/medecin-patient@2x.png" alt="patient consultation" class="rounded">
     </div>
@@ -55,7 +59,7 @@
 
 
 <div class="container my-5 py-5 shadowBloc rounded">
-  <h2 class="card-title text-primary text-center">Nos Partenaires</h5>
+  <h2 class="card-title text-primary text-center mb-5">Nos Partenaires</h5>
   <div class="owl-carousel owl-theme partenariats">
     <div class="item">
       <img src="../images/mutuelle-harmonie.svg" alt=" mutuelle harmonie" class="rounded pt-4">
@@ -73,7 +77,7 @@
 </div>
 
 <div class="container my-5 py-5 shadowBloc rounded">
-  <h2 class="card-title text-primary text-center">Ils nous font confiances</h5>
+  <h2 class="card-title text-primary text-center mb-5">Ils nous font confiances</h5>
   <div class="owl-carousel owl-theme partenariats">
     <div class="item">
       <img src="../images/polyclinique-vauban.svg" alt=" vauban" class="rounded pt-4">
