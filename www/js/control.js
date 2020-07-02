@@ -6,7 +6,6 @@ $(document).ready(function(){
 
       lastname: {
         required: true,
-        minlength: 2
       },
 
       firstname: {
@@ -18,7 +17,7 @@ $(document).ready(function(){
         email: true,
       },
 
-      tel: {
+      phone: {
         required: true,
         minlength: 10,
       },
@@ -31,7 +30,6 @@ $(document).ready(function(){
       lastname: {
 
         required: "Entrer votre Nom de famille",
-        minlength: "Veuillez entrer minimum 2 lettres"
       },
 
       firstname: {
@@ -40,11 +38,19 @@ $(document).ready(function(){
 
       email: {
           required: "Entrer votre email",
-          email:"Veuillez respecter le format"
+          email:"Veuillez respecter le format "
       },
 
       phone: {
         required:"Entrer votre Numero de tel",
+        minlength: "Veuillez entrer des chiffres",
+        color: "red"
+      },
+
+      message: {
+
+        required:"Entrer votre message",
+
       },
 
       agree: "Vous devez accepter que vos informations nous soit transmises"

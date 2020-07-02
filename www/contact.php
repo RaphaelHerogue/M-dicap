@@ -41,10 +41,7 @@
           <form id="formulForm" action="" method="post">
             <div class="preview text-center">
               <img class="preview-img" src="http://simpleicon.com/wp-content/uploads/account.png" alt="Preview Image" width="200" height="200"/>
-              <div class="browse-button">
-                <i class="fa fa-pencil-alt"></i>
-                <input class="browse-input" type="file" name="UploadedFile" id="UploadedFile"/>
-              </div>
+        
               <span class="Error"></span>
             </div>
             <div class="form-group">
