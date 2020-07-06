@@ -9,33 +9,14 @@
   define("SQL_USERNAME", "$users");
   define("SQL_PASSWORD", $mdp);
 
-  class PDOFactory
-  {
-    private static $_instance;
-
-    public function __construct( )
-    {
-
-    }
-
-    public static function getInstance()
-    {
-      if (!isset(static::$_instance))
-      {
         try
         {
-          static::$_instance = new PDO(SQL_DSN, SQL_USERNAME, SQL_PASSWORD,[PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"]);
-          static::$_instance->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+          $_instance = new PDO(SQL_DSN, SQL_USERNAME, SQL_PASSWORD,[PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"]);
+          $_instance -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }
         catch (PDOException $e)
         {
           echo $e;
+          die();
         }
-      }
-      return static::$_instance;
-    }
-  }
-
-  $pdo=pdoFactory::getInstance();
-
 ?>

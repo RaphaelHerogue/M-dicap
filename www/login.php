@@ -17,7 +17,6 @@
   <body>
     <?php
       include "inc/header.php";
-      include "controle.php";
     ?>
 
     <div class="limiter d-flex justify-content-center">
@@ -32,7 +31,7 @@
             </span>
 
             <div class="wrap-input100 validate-input" data-validate = "Nom is required">
-              <input class="input100" type="text" name="nom" placeholder="Nom">
+              <input class="input100" type="text" id="nom" name="nom" placeholder="Nom">
               <span class="focus-input100"></span>
               <span class="symbol-input100">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -40,7 +39,7 @@
             </div>
 
             <div class="wrap-input100 validate-input" data-validate = "Prenom is required">
-              <input class="input100" type="text" name="prenom" placeholder="Prenom">
+              <input class="input100" type="text" id="prenom" name="prenom" placeholder="Prenom">
               <span class="focus-input100"></span>
               <span class="symbol-input100">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -48,7 +47,7 @@
             </div>
 
             <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-              <input class="input100" type="text" name="email" placeholder="Email">
+              <input class="input100" type="text" id="email" name="email" placeholder="Email">
               <span class="focus-input100"></span>
               <span class="symbol-input100">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -56,7 +55,15 @@
             </div>
 
             <div class="wrap-input100 validate-input" data-validate = "Password is required">
-              <input class="input100" type="password" name="pass" placeholder="Password">
+              <input class="input100" type="password" id="pass" name="pass" placeholder="Password">
+              <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+              </span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate = "Password is required">
+              <input class="input100" type="password" id="confirmation" name="confirmation" placeholder="Confirmation">
               <span class="focus-input100"></span>
               <span class="symbol-input100">
                 <i class="fa fa-lock" aria-hidden="true"></i>
@@ -71,6 +78,7 @@
     </div>
 
     <?php
+      include "controle.php";
       include "inc/footer.php";
     ?>
   </body>
