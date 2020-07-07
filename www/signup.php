@@ -25,10 +25,26 @@
             <img src="images/img-01.png" alt="IMG">
           </div>
 
-          <form method="post" action="controle.php" class="login100-form validate-form">
+          <form method="post" action="controleSignup.php" class="login100-form validate-form">
             <span class="login100-form-title">
-              Se connecter
+              Inscription
             </span>
+
+            <div class="wrap-input100 validate-input" data-validate = "Nom is required">
+              <input class="input100" type="text" id="nom" name="nom" placeholder="Nom">
+              <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate = "Prenom is required">
+              <input class="input100" type="text" id="prenom" name="prenom" placeholder="Prenom">
+              <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </span>
+            </div>
 
             <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
               <input class="input100" type="text" id="email" name="email" placeholder="Email">
@@ -40,6 +56,14 @@
 
             <div class="wrap-input100 validate-input" data-validate = "Password is required">
               <input class="input100" type="password" id="pass" name="pass" placeholder="Password">
+              <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+              </span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate = "Password is required">
+              <input class="input100" type="password" id="confirmation" name="confirmation" placeholder="Confirmation">
               <span class="focus-input100"></span>
               <span class="symbol-input100">
                 <i class="fa fa-lock" aria-hidden="true"></i>

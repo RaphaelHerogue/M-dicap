@@ -71,20 +71,33 @@
         echo "<div>tous les champs remplis</div>";
     }
 
+    $options = [
+    'cost' => 12,
+    ];
+    $mdpCrypt = password_hash($mdpUser, PASSWORD_BCRYPT, $options);
+
     /*-----------FIN VERIFICATION FORMULAIRE-----------------*/
 
     require_once("inc/connexion_bdd.php");
 
-    $donnees = [
-                    'FIRSTNAME' => $prenom,
-                    'NAME' => $nom,
-                    'MAIL' => $mail,
-                    'PSW' => $mdpUser,
-                ];
-    $req = $_instance ->
-    prepare("INSERT INTO users VALUES (:FIRSTNAME, :NAME, :MAIL, :PSW)");
+    $req = $_instance -> prepare("INSERT INTO users (IDTYPE, FIRSTNAME, NAME, MAIL, PSW)");
 
-    $req -> execute($donnees);
+    $req -> bindValue(":IDTYPE", 0, PDO::PARAM_STR);
+    $req -> bindValue(":FIRSTNAME", $prenom, PDO::PARAM_STR);
+    $req -> bindValue(":NAME", $nom, PDO::PARAM_STR);
+    $req -> bindValue(":MAIL", $mail, PDO::PARAM_STR);
+    $req -> bindValue(":PSW", $mdpCrypt, PDO::PARAM_STR);
+
+    $insert = $req -> execute();
+
+    if ($insert)
+    {
+      echo "Votre inscription est terminé";
+    }
+    else
+    {
+      echo "Une erreur c'est produite";
+    }
   }
   catch (Exception $e)
   {

@@ -4,7 +4,7 @@
   $dbName = "medicap";
   $users = "root";
   $mdp = "";
-  $port = 3308;
+  $port = 3306;
   define("SQL_DSN", "mysql:dbname=$dbName;host=$serveur; port= $port");
   define("SQL_USERNAME", "$users");
   define("SQL_PASSWORD", $mdp);
