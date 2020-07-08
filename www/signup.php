@@ -21,11 +21,12 @@
 
     <div class="limiter d-flex justify-content-center">
         <div class="wrap-login100">
-          <div class="login100-pic js-tilt" data-tilt>
-            <img src="images/img-01.png" alt="IMG">
+          <div class="login100-pic js-tilt d-flex" data-tilt>
+            <img class="align-self-center" src="images/img-01.png" alt="IMG">
           </div>
 
           <form method="post" action="controleSignup.php" class="login100-form validate-form">
+            <center><h3><a href="login.php">Déjà un compte ?</a></h3></center>
             <span class="login100-form-title">
               Inscription
             </span>
@@ -78,7 +79,6 @@
     </div>
 
     <?php
-      include "controle.php";
       include "inc/footer.php";
     ?>
   </body>

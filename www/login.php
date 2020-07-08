@@ -25,7 +25,8 @@
             <img src="images/img-01.png" alt="IMG">
           </div>
 
-          <form method="post" action="controle.php" class="login100-form validate-form">
+          <form method="post" action="controleLogin.php" class="login100-form validate-form">
+            <center><h3><a href="signup.php">Pas encore inscript ?</a></h3></center>
             <span class="login100-form-title">
               Se connecter
             </span>
@@ -54,7 +55,7 @@
     </div>
 
     <?php
-      include "controle.php";
+      include "modal.php";
       include "inc/footer.php";
     ?>
   </body>

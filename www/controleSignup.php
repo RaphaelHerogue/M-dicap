@@ -71,10 +71,8 @@
         echo "<div>tous les champs remplis</div>";
     }
 
-    $options = [
-    'cost' => 12,
-    ];
-    $mdpCrypt = password_hash($mdpUser, PASSWORD_BCRYPT, $options);
+    $type = "sha3-512";
+    $mdpCrypt = hash($type, $mdpUser);
 
     /*-----------FIN VERIFICATION FORMULAIRE-----------------*/
 
