@@ -11,20 +11,10 @@
 
   similar_text($mdpUser, $confirmation, $perc);
 
-  $char = preg_match('/[a-z]/', $mdpUser);
-  $charMaj = preg_match('/[A-Z]/', $mdpUser);
-  $number = preg_match('[\d]', $mdpUser);
-  $specialChar = preg_match('[\W]', $mdpUser);
-
-    if($nom == NULL && $prenom == NULL)
-    {
-      echo "<div>Nom ou Prénom laissé vide.</div>";
-    }
-      else
-      {
-        $boolNom = true;
-        $boolPrenom = true;
-      }
+    $db = App::getDatabase();
+    $validator = new Validator($_POST);
+    $validator = isAlpha("nom", "Votre nom contient des caractères spéciaux");
+    
 
     if (!filter_var($mail, FILTER_VALIDATE_EMAIL))
     {
