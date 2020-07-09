@@ -1,34 +1,50 @@
 <?php
-  $mail = isset($_POST["email"]) ? $_POST["email"] : NULL;
-  $mdpUser = isset($_POST["pass"]) ? $_POST["pass"] : NULL;
-  $mailBool = false;
-  $mdpBool = false;
+  $mail = $_POST["email"];
+  $mdpUser = $_POST["pass"];
 
-  require_once("inc/connexion_bdd.php");
+  require_once("inc/loader.php");
 
-  $req = $_instance -> prepare("SELECT MAIL, PSW from users");
-  $select = $req -> execute();
+  $db = App::getDatabase();
 
-  while ($liste = $req -> fetch())
+  if (!empty($mail) && !empty($mdpUser))
   {
-    $mailBdd = $liste["MAIL"];
-    $hash = $liste["PSW"];
+    $user = $db->query("SELECT * from users WHERE MAIL = ? ",[$mail])->fetch();
+
+    if ($user)
+    {
+      echo "ce mail est bon";
+    }
+    else
+    {
+      echo "ce mail n'existe pas";
+    }
+
+    var_dump($user);
+
+    $type = "sha3-512";
+    $mdpCrypt = hash($type, $mdpUser);
+    echo $mdpCrypt;
+
+    foreach ($user as $k => $v)
+    {
+      if ($mail == $v->db->MAIL && $mdpCrypt == $v->db->PSW)
+      {
+        session_start();
+        $_SESSION["firstname"] = $v["FIRSTNAME"];
+        $_SESSION["name"] = $v["NAME"];
+        header('location: index.php');
+        exit();
+      }
+        else
+        {
+          echo 'Mauvais identifiant ou mot de passe !';
+        }
+      }
   }
-
-  $type = "sha3-512";
-  $mdpCrypt = hash($type, $mdpUser);
-
-  if ($mdpCrypt === $hash)
+  else
   {
-    $mdpBool = true;
+    echo "Les champs sont vide !";
   }
-
-  if ($mail === $mailBdd)
-  {
-    $mailBool = true;
-  }
-
-  
 
 
 ?>

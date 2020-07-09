@@ -16,8 +16,6 @@
   $number = preg_match('[\d]', $mdpUser);
   $specialChar = preg_match('[\W]', $mdpUser);
 
-  try
-  {
     if($nom == NULL && $prenom == NULL)
     {
       echo "<div>Nom ou Prénom laissé vide.</div>";
@@ -71,34 +69,19 @@
         echo "<div>tous les champs remplis</div>";
     }
 
-    $type = "sha3-512";
-    $mdpCrypt = hash($type, $mdpUser);
+
 
     /*-----------FIN VERIFICATION FORMULAIRE-----------------*/
+    /*-----------ENREGISTREMENT BDD--------------------------*/
 
-    require_once("inc/connexion_bdd.php");
+    $type = "sha3-512";
+    $mdpCrypt = hash($type, $mdpUser);
+    require_once("inc/loader.php");
 
-    $req = $_instance -> prepare("INSERT INTO users (IDTYPE, FIRSTNAME, NAME, MAIL, PSW)");
+    $db = App::getDatabase();
 
-    $req -> bindValue(":IDTYPE", 0, PDO::PARAM_STR);
-    $req -> bindValue(":FIRSTNAME", $prenom, PDO::PARAM_STR);
-    $req -> bindValue(":NAME", $nom, PDO::PARAM_STR);
-    $req -> bindValue(":MAIL", $mail, PDO::PARAM_STR);
-    $req -> bindValue(":PSW", $mdpCrypt, PDO::PARAM_STR);
+    $req = $db->query("INSERT INTO users SET IDTYPE = ?, FIRSTNAME = ?, NAME = ?, MAIL = ?, PSW = ?",
+                                            [0, $prenom, $nom, $mail, $mdpCrypt]);
 
-    $insert = $req -> execute();
-
-    if ($insert)
-    {
-      echo "Votre inscription est terminé";
-    }
-    else
-    {
-      echo "Une erreur c'est produite";
-    }
-  }
-  catch (Exception $e)
-  {
-    echo $e;
-  }
+    //$userId = $db->lastInsertId;
 ?>
