@@ -21,10 +21,7 @@
 
     var_dump($user);
 
-    $type = "sha3-512";
-    $mdpCrypt = hash($type, $mdpUser);
-    echo $mdpCrypt;
-
+    
     foreach ($user as $k => $v)
     {
       if ($mail == $v->db->MAIL && $mdpCrypt == $v->db->PSW)

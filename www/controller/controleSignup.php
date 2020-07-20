@@ -14,8 +14,25 @@
     $db = App::getDatabase();
     $validator = new Validator($_POST);
     $validator = isAlpha("nom", "Votre nom contient des caractères spéciaux");
-    
+    $validator->isEmail('email', "Votre email n'est pas valide");
+    if($validator->isValid())
+    {
+        $validator->isUniq('email', $db, 'users', 'Cet email est déjà utilisé pour un autre compte');
+    }
+    $validator->isMDP('password', 'Vous devez rentrer un mot de passe valide');
 
+    if($validator->isValid())
+    {
+        App::getAuth()->register($db, $_POST['username'], $_POST['password'], $_POST['email']);
+        Session::getInstance()->setFlash('success', 'Un email de confirmation vous a été envoyé pour valider votre compte');
+        App::redirect('login.php');
+
+    }
+      else
+      {
+        $errors = $validator->getErrors();
+      }
+/*
     if (!filter_var($mail, FILTER_VALIDATE_EMAIL))
     {
         echo "<div>Email invalide</div>";
@@ -58,9 +75,7 @@
     {
         echo "<div>tous les champs remplis</div>";
     }
-
-
-
+*/
     /*-----------FIN VERIFICATION FORMULAIRE-----------------*/
     /*-----------ENREGISTREMENT BDD--------------------------*/
 
