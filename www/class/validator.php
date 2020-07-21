@@ -1,5 +1,6 @@
 <?php
-
+class Validator
+{
   private $data;
   private $errors = [];
 
@@ -18,25 +19,14 @@
 
   public function isMDP($field, $errorMsg = "")
   {
-    if(preg_match('/^[a-z]+$/', $this->getField($field))
-       && preg_match('/^[A-Z]+$/', $this->getField($field))
-       && preg_match('/^[\d]+$/', $this->getField($field))
-       && preg_match('/^[\W]+$/', $this->getField($field))
-      )
-    {
-      $this->errors[$field] = $errorMsg;
-      return false;
-  }
+
   return true;
   }
 
   public function isAlpha($field, $errorMsg)
   {
-    if(preg_match('/^[a-zA-Z]+$/', $this->getField($field)))
-    {
-      $this->errors[$field] = $errorMsg;
-      return false;
-    }
+
+
     return true;
   }
 
@@ -59,6 +49,13 @@
         return true;
     }
 
+    public function isConfirmed($field, $errorMsg = '')
+    {
+        $value = $this->getField($field);
+        
+        return true;
+    }
+
     public function isValid()
     {
         return empty($this->errors);
@@ -68,5 +65,5 @@
     {
         return $this->errors;
     }
-
+}
 ?>

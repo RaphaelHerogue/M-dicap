@@ -45,13 +45,5 @@
     {
       return $this->pdo->lastInsertId();
     }
-
   }
-
-
-
-
-
-
-
 ?>

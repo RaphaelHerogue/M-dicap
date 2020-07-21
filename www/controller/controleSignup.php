@@ -1,92 +1,34 @@
 <?php
-  $nom = isset($_POST["nom"]) ? $_POST["nom"] : NULL;
-  $prenom = isset($_POST["prenom"]) ? $_POST["prenom"] : NULL;
-  $mail = isset($_POST["email"]) ? $_POST["email"] : NULL;
-  $mdpUser = isset($_POST["pass"]) ? $_POST["pass"] : NULL;
-  $confirmation = isset($_POST["confirmation"]) ? $_POST["confirmation"] : NULL;
-  $boolNom = false;
-  $boolPrenom = false;
-  $boolMail = false;
-  $boolMdp = false;
+  require_once '../loader.php';
 
-  similar_text($mdpUser, $confirmation, $perc);
+  if(!empty($_POST))
+  {
+    $errors = array();
 
     $db = App::getDatabase();
     $validator = new Validator($_POST);
-    $validator = isAlpha("nom", "Votre nom contient des caractères spéciaux");
-    $validator->isEmail('email', "Votre email n'est pas valide");
+    $validator->isAlpha('FIRSTNAME', "Votre pseudo n'est pas valide (alphanumérique)");
     if($validator->isValid())
     {
-        $validator->isUniq('email', $db, 'users', 'Cet email est déjà utilisé pour un autre compte');
+      $validator->isUniq('FIRSTNAME', $db, 'users', 'Ce prénom est déjà enregistrer');
     }
-    $validator->isMDP('password', 'Vous devez rentrer un mot de passe valide');
+    $validator->isEmail('MAIL', "Votre email n'est pas valide");
+    if($validator->isValid())
+    {
+      $validator->isUniq('MAIL', $db, 'users', 'Cet email est déjà utilisé pour un autre compte');
+    }
+    $validator->isConfirmed('PSW', 'Vous devez rentrer un mot de passe valide');
 
     if($validator->isValid())
     {
-        App::getAuth()->register($db, $_POST['username'], $_POST['password'], $_POST['email']);
-        Session::getInstance()->setFlash('success', 'Un email de confirmation vous a été envoyé pour valider votre compte');
-        App::redirect('login.php');
-
+      App::getAuth()->register($db, $_POST['FIRSTNAME'], $_POST['NAME'], $_POST['PSW'], $_POST['MAIL']);
+      Session::getInstance()->setFlash('success', 'Un email de confirmation vous a été envoyé pour valider votre compte');
+      App::redirect('../login.php');
     }
       else
       {
         $errors = $validator->getErrors();
       }
-/*
-    if (!filter_var($mail, FILTER_VALIDATE_EMAIL))
-    {
-        echo "<div>Email invalide</div>";
-    }
-      else
-      {
-        $boolMail = true;
-      }
-
-    if ($perc != 100)
-    {
-        echo "<div>Mot de passe différent</div>";
-    }
-      elseif ($char != 1)
-      {
-        echo "<div>Le mot de passe ne contient pas de minuscules</div>";
-      }
-        elseif ($charMaj != 1)
-        {
-          echo "<div>Le mot de passe ne contient pas de majuscules</div>";
-        }
-          elseif ($number != 1)
-          {
-            echo "<div>Le mot de passe ne contient pas de nombres</div>";
-          }
-            elseif ($specialChar != 1)
-            {
-              echo "<div>Le mot de passe ne contient pas de caractères spéciaux</div>";
-            }
-              elseif (strlen($mdpUser) <= 8)
-              {
-                echo "<div>Le mot de passe est inférieur à 8 caractères</div>";
-              }
-                else
-                {
-                  $boolMdp = true;
-                }
-
-    if ($boolNom == true && $boolPrenom == true && $boolMail == true && $boolMdp == true)
-    {
-        echo "<div>tous les champs remplis</div>";
-    }
-*/
-    /*-----------FIN VERIFICATION FORMULAIRE-----------------*/
-    /*-----------ENREGISTREMENT BDD--------------------------*/
-
-    $type = "sha3-512";
-    $mdpCrypt = hash($type, $mdpUser);
-    require_once("inc/loader.php");
-
-    $db = App::getDatabase();
-
-    $req = $db->query("INSERT INTO users SET IDTYPE = ?, FIRSTNAME = ?, NAME = ?, MAIL = ?, PSW = ?",
-                                            [0, $prenom, $nom, $mail, $mdpCrypt]);
-
-    //$userId = $db->lastInsertId;
+  }
+  var_dump($errors);
 ?>

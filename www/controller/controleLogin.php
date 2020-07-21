@@ -1,47 +1,25 @@
 <?php
-  $mail = $_POST["email"];
-  $mdpUser = $_POST["pass"];
+  require_once "../loader.php";
 
-  require_once("inc/loader.php");
+  $auth = app::getAuth();
+  $db = app::getDatabase();
 
-  $db = App::getDatabase();
+  //App::redirect('../profil.php');
 
-  if (!empty($mail) && !empty($mdpUser))
+  if(!empty($_POST) && !empty($_POST['MAIL']) && !empty($_POST['PSW']))
   {
-    $user = $db->query("SELECT * from users WHERE MAIL = ? ",[$mail])->fetch();
+    $user = $auth->login($db, $_POST['MAIL'], $_POST['PSW'], isset($_POST['REMEMBER']));
+    $session = session::getInstance();
 
-    if ($user)
+    if($user)
     {
-      echo "ce mail est bon";
+      echo "toto";
+      $session->setFlash('success', 'Vous êtes maintenant connecté');
+      app::redirect('../profil.php');
     }
-    else
-    {
-      echo "ce mail n'existe pas";
-    }
-
-    var_dump($user);
-
-    
-    foreach ($user as $k => $v)
-    {
-      if ($mail == $v->db->MAIL && $mdpCrypt == $v->db->PSW)
+      else
       {
-        session_start();
-        $_SESSION["firstname"] = $v["FIRSTNAME"];
-        $_SESSION["name"] = $v["NAME"];
-        header('location: index.php');
-        exit();
-      }
-        else
-        {
-          echo 'Mauvais identifiant ou mot de passe !';
-        }
+        $session->setFlash('danger', 'Identifiant ou mot de passe incorrecte');
       }
   }
-  else
-  {
-    echo "Les champs sont vide !";
-  }
-
-
 ?>
