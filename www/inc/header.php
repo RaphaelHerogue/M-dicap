@@ -1,4 +1,4 @@
-<header>
+<header class="sticky-top">
   <nav class="navbar navbar-expand-md navbar-light bg-light sidebarNavigation" data-sidebarClass="navbar-light bg-light">
 
   <div class="container-fluid">

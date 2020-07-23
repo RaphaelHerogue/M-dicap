@@ -2,6 +2,7 @@
   $title = "Accueil";
   $metaD = "Bienvenue sur la page d'accueil";
 
+
   include "inc/head.php";
   include "inc/header.php";
 
@@ -18,3 +19,18 @@
   echo "</main>";
   include "inc/footer.php";
 ?>
+
+      <?php include "modal.php";?>
+  </main>
+
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init({
+      easing: 'ease-in-out-sine'
+    });
+  </script>
+
+
+    <?php
+    include "inc/footer.php";
+    ?>
