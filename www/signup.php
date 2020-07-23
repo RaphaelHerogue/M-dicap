@@ -22,10 +22,18 @@
       </div>
 
       <div class="wrap-input100 validate-input" data-validate = "Prenom is required">
-        <input class="input100" type="text" id="NAME" name="NAME" placeholder="Prenom">
+        <input class="input100" type="text" id="NAME" name="NAME" placeholder="Prénom complet">
         <span class="focus-input100"></span>
         <span class="symbol-input100">
           <i class="fa fa-envelope" aria-hidden="true"></i>
+        </span>
+      </div>
+
+      <div class="wrap-input100 validate-input" data-validate = "Password is required">
+        <input class="input100" type="date" id="PSW" name="DATEBIRTH" placeholder="Date naissance">
+        <span class="focus-input100"></span>
+        <span class="symbol-input100">
+          <i class="fa fa-lock" aria-hidden="true"></i>
         </span>
       </div>
 

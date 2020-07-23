@@ -7,17 +7,21 @@
 
     $db = App::getDatabase();
     $validator = new Validator($_POST);
-    $validator->isAlpha('FIRSTNAME', "Votre pseudo n'est pas valide (alphanumérique)");
+    $validator->isAlpha('FIRSTNAME', "Votre nom contient des caractères non alphabétiques");
+    $validator->isAlpha('NAME', "Votre prénom contient des caractères non alphabétiques, séparer vos différents prénoms par une virgule.");
+
     if($validator->isValid())
     {
-      $validator->isUniq('FIRSTNAME', $db, 'users', 'Ce prénom est déjà enregistrer');
+      $validator->doublon('FIRSTNAME', 'NAME', 'DATEBIRTH', $db, 'users', 'Vous êtes déjà enregistrer passer par le formulaire récupération');
     }
+
     $validator->isEmail('MAIL', "Votre email n'est pas valide");
     if($validator->isValid())
     {
       $validator->isUniq('MAIL', $db, 'users', 'Cet email est déjà utilisé pour un autre compte');
     }
-    $validator->isConfirmed('PSW', 'Vous devez rentrer un mot de passe valide');
+    $validator->isMDP('PSW', 'Votre mot de passe doit contenir une minuscule, une majuscule, un caractère spéciale et avoir 8 caractères');
+    $validator->isConfirmed('PSW','confirmation', 'Vos mots de passe sont différents');
 
     if($validator->isValid())
     {
@@ -29,6 +33,6 @@
       {
         $errors = $validator->getErrors();
       }
+      var_dump($errors);
   }
-  var_dump($errors);
 ?>
