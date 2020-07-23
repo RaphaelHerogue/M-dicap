@@ -32,7 +32,9 @@
   </div>
 </div>
 
-<div class="container my-5 py-5 shadowBloc rounded actu">
+<div data-aos="fade-right"
+     data-aos-offset="400"
+     data-aos-duration="750" class="container my-5 py-5 shadowBloc rounded actu">
   <h2 class="card-title text-primary text-center mb-5">Votre Médicap à porté de main</h5>
   <div class="card flex-row d-flex align-items-center">
     <div class="col-6 col-md-8">
@@ -44,7 +46,9 @@
   </div>
 </div>
 
-<div class="container my-5 py-5 shadowBloc rounded actu">
+<div data-aos="fade-left"
+     data-aos-offset="400"
+     data-aos-duration="750" class="container my-5 py-5 shadowBloc rounded actu">
   <h2 class="card-title text-primary text-center mb-5">Nos Services</h5>
   <div class="card flex-row d-flex align-items-center">
     <div class="col-6 col-md-4">
