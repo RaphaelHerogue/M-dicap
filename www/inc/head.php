@@ -11,6 +11,7 @@
   <link rel="stylesheet" type="text/css" href="../css/util.css">
   <link rel="stylesheet" type="text/css" href="../css/main.css">
   <link rel="stylesheet" type="text/css" href="../css/select2.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/aos.css">
   <script type="text/javascript" src="../js/scriptNav.js"></script>
   <meta name="description" content="
   <?php
